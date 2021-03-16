@@ -163,12 +163,12 @@ footer p.small{
     header .close-burger{
      display: block;
      cursor: pointer;
-      transform: translateX(50px);
+      transform: translateX(55px);
     }
     header .close-burger span{
         display: block;
         background-color: #000;
-        width: 35px;
+        width: 30px;
         height: 5px;
     }
     header .close-burger span:nth-child(1){
@@ -219,4 +219,10 @@ footer p.small{
     .display-one span{
         transform: none !important;
     }
+    footer p{
+        color: var(--white-text);
+        font-size: 1.3rem;
+        text-align: center;
+      }
+     
 }
