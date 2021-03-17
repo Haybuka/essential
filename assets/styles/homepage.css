@@ -292,6 +292,7 @@ p.shade{
     background-size: contain;
     background-position: top left;
     position: relative;
+    margin: 20px 0;
     }
     .about-us::before{
         content: url('/assets/images/oval shape.svg');
