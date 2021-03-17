@@ -100,7 +100,7 @@ position: fixed;
 z-index: 10;
 top: 0;
 left: 0;
-background-color: #fff;
+background-color: #EE6624;
 /* display: none; */
 transform: translateX(-500px);
 transition: all 0.4s ease-in;
@@ -111,7 +111,7 @@ transition: all 0.4s ease-in;
 position: fixed;
 top: 20px;
 left: 0;
-background-color: rgb(255, 255, 255);
+/* background-color: rgb(255, 255, 255); */
 height: 100vh;
 width: 100% ;
 }
@@ -126,7 +126,7 @@ width: 100%;
 .dropdowns-column li{
 padding: 10px 0;
 border-bottom: 1px solid rgba(0, 0, 0, 0.459);
-/* font-weight: bold; */
+margin-bottom: 10px;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -136,7 +136,7 @@ border-bottom: 1px solid rgba(129,129,129,.2);
 }
 .dropdowns-column li a{
 text-decoration: none;
-color: #000;
+color: rgb(255, 255, 255);
 }
 .search-category {
 display: flex;
@@ -212,13 +212,14 @@ header nav .rightNav li.cart{
 }
 .harmburger.roll{
  transform: translate(200px);
- background-color: #EE6624;
+ background-color: #ffffff;
  padding: 10px;
  border-radius: 20px 5px;
  z-index: 15;
 }
 .harmburger.roll span{
-    background-color: #fff;
+    background-color: #EE6624;
+    border-radius: 5px;
 }
 .harmburger span{
  display: block;
