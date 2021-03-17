@@ -239,12 +239,16 @@ overflow-x: hidden;
 
 @media screen and (max-width:770px){
     .banner aside{
-        margin: 20px auto;
+        margin: 0px auto;
         max-width: 300px;
+        max-height: 300px;
     }
     .banner{
         display: block;
         text-align: center;
+    }
+    .banner article{
+        margin: 15px 0;
     }
     .banner article h2{
         line-height: 25px;
