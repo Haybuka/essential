@@ -12,6 +12,10 @@ li{
 }
 header{
 padding: 30px 5px;
+background-image: url('/assets/images/header-bg.svg');
+background-repeat: no-repeat;
+background-size: contain;
+background-position: top right;
 }
 header nav{
 display: flex;
@@ -88,6 +92,9 @@ font-size: 16px;
 }
 header .rightNav li{
 margin: 0 20px;
+}
+header .rightNav li a{
+    /* background-color: #EE6624; */
 }
 .harmburger{
 display: none;
@@ -242,6 +249,7 @@ overflow-x: hidden;
         margin: 0px auto;
         max-width: 300px;
         max-height: 300px;
+        transform: scaleX(-1);
     }
     .banner{
         display: block;
