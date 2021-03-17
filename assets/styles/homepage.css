@@ -140,7 +140,7 @@ justify-content: space-between;
 align-items: center;
 cursor: pointer;
 padding: 10px;
-border-bottom: 1px solid rgba(129,129,129,.2);
+border-bottom: 2px solid rgba(255, 255, 255, 0.34);
 }
 .dropdowns-column li a{
 text-decoration: none;
@@ -164,6 +164,7 @@ display: block !important;
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
+    padding: 0 50px;
 }
 .banner article h2 {
     line-height: 50px;
@@ -181,7 +182,7 @@ display: block !important;
     width: 100%;
     height: 100%;
 }
-.banner .explore{
+.explore{
     text-decoration: none;
     color: #fff;
     padding: 10px 40px;
@@ -189,9 +190,48 @@ display: block !important;
     background-color: #EE6624;
     display: inline-block;
     margin-top: 35px;
+    position: relative;
+}
+.explore::after{
+    display: inline-block;
+    content: '';
+    background-color: #e05008;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    transition: all 0.25s ease-in;
+    opacity:1;
+    z-index: -2;
+}
+.explore:hover::after{
+  transform: scaleX(1.2);
+  opacity: 0;
 }
 
+.scroll-down{
+    padding: 20px;
+    position: relative;
+  width: 95vw;
+  text-align: center;
+  margin-top: 20px;
+
+}
+.scroll-down img{
+    /* transform: rotate(-180deg); */
+    position: absolute;
+    
+}
+.scroll-down img:nth-child(1){
+    transform: translateY(10px);
+    z-index: 1;
+}
 @media screen and (max-width:1110px){
+    .banner{
+        padding: 10px;
+    }
 .container{
 padding: 0;
 }
