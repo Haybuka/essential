@@ -245,4 +245,10 @@ overflow-x: hidden;
         display: block;
         text-align: center;
     }
+    .banner article h2{
+        line-height: 25px;
+    }
+    .banner article h2 span{
+        font-size: 30px;
+    }
 }
