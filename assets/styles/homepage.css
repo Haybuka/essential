@@ -318,7 +318,28 @@ p.shade{
     /* flex-direction: row-reverse; */
     padding: 0 50px;
 }
-
+/* Selling section */
+.feature-image {
+    width: 300px;
+    height: 250px;
+}
+.selling article{
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.img-fluid{
+    height: 100%;
+    width: 100%;
+}
+.item-name, .selling h2{
+    text-align: center;
+}
+.sell-slides section{
+    display: flex;
+}
+.categ-texts{
+    margin: 20px 0;
+}
 @media screen and (max-width:1110px){
     .banner{
         padding: 10px;

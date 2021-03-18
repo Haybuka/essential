@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA==" crossorigin="anonymous">
-  <link rel="stylesheet" href="/assets/styles/homepage.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css" integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA==" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/assets/styles/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+     <link rel="stylesheet" href="/assets/styles/homepage.css">
 </head>
 <body>
     <!-- <img src="/assets/images/oval shape.svg" alt="" class="img-oval"> -->
@@ -115,6 +117,90 @@ eu. Donec massa sapien faucibus et molestie ac feugiat sed lectus.
             </div>
         </article>
      </section>
+     <section class="my-3 py-5 selling contains">
+        <div class="categ-texts p2">
+         <h2> Our Products</h2>
+         <p class="shade">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="sell-slides multiple-items ">
+            <section class="px-2 center js-center">
+              <div>
+                <article>
+                  <div class="feature-image">
+                    <img src="/assets/images/organic rice 1.png" class="img-fluid">
+                  </div>
+                  <aside class="py-3">
+                    <div class="sell-header">
+                      <h4 class="item-name">Organic Rice</h4>
+                    </div>
+                  </aside>    
+               </article>
+              </div>  
+              <div>
+                <article>
+                  <div class="feature-image">
+                    <img src="/assets/images/palmoil.png" class="img-fluid">
+                  </div>
+                  <aside class="py-3">
+                    <div class="sell-header">
+                      <h4 class="item-name">Palm Oil</h4>
+                    </div>
+                  </aside>    
+               </article>
+              </div> 
+              <div>
+                <article>
+                  <div class="feature-image">
+                    <img src="/assets/images/beans-flour.png" class="img-fluid">
+                  </div>
+                  <aside class="py-3">
+                    <div class="sell-header">
+                      <h4 class="item-name">Beans Flour</h4>
+                    </div>
+                  </aside>    
+               </article>
+              </div>   
+              <div>
+                <article>
+                  <div class="feature-image">
+                    <img src="/assets/images/organic rice 1.png" class="img-fluid">
+                  </div>
+                  <aside class="py-3">
+                    <div class="sell-header">
+                      <h4 class="item-name">Organic Rice</h4>
+                    </div>
+                  </aside>    
+               </article>
+              </div>  
+              <div>
+                <article>
+                  <div class="feature-image">
+                    <img src="/assets/images/palmoil.png" class="img-fluid">
+                  </div>
+                  <aside class="py-3">
+                    <div class="sell-header">
+                      <h4 class="item-name">Palm Oil</h4>
+                    </div>
+                  </aside>    
+               </article>
+              </div>  
+              <div>
+                <article>
+                  <div class="feature-image">
+                    <img src="/assets/images/organic rice 1.png" class="img-fluid">
+                  </div>
+                  <aside class="py-3">
+                    <div class="sell-header">
+                      <h4 class="item-name">Organic Rice</h4>
+                    </div>
+                  </aside>    
+               </article>
+              </div>      
+            </section>
+        </div>
+      </section>
+      <script src="/assets/script/jquery.js"></script>
+      <script src="/assets/script/slick.js"></script>
 <script>
 
 let harmburger = document.querySelector('.harmburger');
@@ -124,13 +210,42 @@ harmburger.addEventListener('click',()=>{
   navAlt.classList.toggle('slide-left');
   harmburger.classList.toggle('roll')
 })
-// document.addEventListener('click', function(event) {
-//     let isClickInsideElement = event.target.contains(navAlt);
-//     // console.log(isClickInsideElement)
-//     if (isClickInsideElement) navAlt.classList.remove('slide-left')
-    
-// });
-
+$('.center').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 4,
+      arrows:false,
+      autoplay:true,
+      responsive: [
+      {
+          breakpoint: 1240,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '20px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 630,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '20px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
     </script>
 </body>
 </html>
