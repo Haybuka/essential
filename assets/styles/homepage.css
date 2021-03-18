@@ -333,12 +333,16 @@ p.shade{
 }
 .item-name, .selling h2{
     text-align: center;
+    font-weight: 600;
 }
 .sell-slides section{
     display: flex;
 }
 .categ-texts{
     margin: 20px 0;
+}
+.selling {
+   text-align: center;
 }
 @media screen and (max-width:1110px){
     .banner{
