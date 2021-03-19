@@ -575,6 +575,7 @@ overflow-x: hidden;
     }
     .customer-review{
         padding: 10px 0;
+        overflow: hidden !important;
     }
     .customer-review .shade{
         font-size: 12px;
