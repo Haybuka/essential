@@ -97,3 +97,5 @@ $('.slide-review').slick({
     }
   ]
 });
+
+AOS.init();

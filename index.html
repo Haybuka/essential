@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Essenx</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles/index.css">
 </head>
 <body>
     <div class="shownav"></div>
-    <header>
+    <header data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-in-back">
         <nav class="container"> 
            <div class="logo">
                <img src="/assets/images/logo.svg" alt=" ">
@@ -31,7 +32,7 @@
         </nav>
     </header>
     <div class="body">
-        <main>
+        <main data-aos="fade-right" data-aos-easing="ease-in-back" data-aos-duration="800">
             <h1 class="display-one">
                <span> Explore the peak of </span>
                <span>African Agriculture</span>
@@ -42,6 +43,7 @@
             <p class="small">All Rights Reserved</p>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         let harmburger = document.querySelector('.harmburger');
         let closeburger = document.querySelector('.close-burger');
@@ -57,6 +59,7 @@
             navCover.classList.toggle('show')
             navList.classList.toggle('view')
         })
+        AOS.init();
     </script>
 </body>
 </html>
