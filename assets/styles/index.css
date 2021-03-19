@@ -223,6 +223,7 @@ footer p.small{
         color: var(--white-text);
         font-size: 1.3rem;
         text-align: center;
+        width:100vw;
       }
      
 }
