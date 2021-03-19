@@ -339,10 +339,83 @@ p.shade{
     display: flex;
 }
 .categ-texts{
-    margin: 20px 0;
+    margin: 30px 0;
 }
 .selling {
    text-align: center;
+}
+
+/* Customer review */
+.customer-review{
+    padding: 40px;
+    background-color: #EE6624;
+    margin: 40px 0;
+    text-align: center;
+}
+.customer-review-heading {
+    margin: 20px;
+}
+.customer-review .shade{
+    color: #fff;
+    font-size: 14px;
+}
+
+.customer-review-heading h3{
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+}
+.slide-review{
+    flex: 1;
+    display: flex;
+}
+
+.slide-review article {
+    padding: 30px;
+    width: 500px; 
+    margin: 0 15px;
+    /* overflow: hidden; */
+    position: relative;
+    z-index: 1;
+}
+.slide-review article div{
+    transform: translateY(-5px);
+}
+.slide-review article h4{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.slide-review article p{
+ font-size: 12px;
+}
+.card-img{
+    width: 500px;
+    height: 200px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.testimony-det{
+    width: 500px;
+    margin: 10px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimony-det div:nth-child(2){
+    margin-left: 10px;
+    text-align: initial;
+}
+.testimony-det p{
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 5px;
+}
+.testimony-det small{
+    font-size: 10px;
 }
 @media screen and (max-width:1110px){
     .banner{
@@ -425,8 +498,16 @@ overflow-x: hidden;
    left: 30%;
 }
 }
-
+@media screen and (max-width:1060px){
+    .slide-review{
+       width: 600px;
+       margin: 0 auto;
+    }
+}
 @media screen and (max-width:770px){
+    .slide-review{
+        width: auto;
+     }
     .banner aside{
         margin: 0px auto;
         max-width: 300px;
