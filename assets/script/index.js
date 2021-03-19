@@ -78,7 +78,7 @@ $('.slide-review').slick({
       settings: {
         arrows: true,
         centerMode: true,
-        centerPadding: '20px',
+        centerPadding: '0px',
         slidesToShow: 1,
         autoplaySpeed:1500,
         cssEase:'ease-out'
