@@ -100,6 +100,18 @@ padding: 0;
 display: flex;
 align-items: center;
 }
+.nav-soc-link{
+    display: flex !important;
+    position: static !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    justify-content: space-between;
+}
+.nav-soc-link li{
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
 .browse-nav li{
 display: inline-block;
 margin: 0 10px;
