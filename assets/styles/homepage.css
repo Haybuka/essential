@@ -362,7 +362,7 @@ p.shade{
 }
 
 .customer-review-heading h3{
-    font-weight: 400;
+    font-weight: 600;
     font-size: 36px;
     color: #fff;
 }
@@ -417,6 +417,41 @@ p.shade{
 }
 .testimony-det small{
     font-size: 10px;
+}
+footer {
+    background-color: #0B0D17;
+    color: #fff;
+    padding: 20px 60px;
+    text-align: center;
+}
+footer li{
+    margin: 0 15px;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-top{
+    padding: 20px 0;
+}
+.footer-links{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+.copy-right{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 @media screen and (max-width:1110px){
     .banner{
@@ -567,6 +602,12 @@ overflow-x: hidden;
         top: 10%;
         z-index: 1;
     }
+    .footer-links{
+        display: block;
+    }
+    .footer-links li{
+        margin: 15px 0;
+    }
     
 }
 
@@ -594,5 +635,14 @@ overflow-x: hidden;
        margin: 0 15px;
        background-color: #fff;
        border-radius: 10px;
+    }
+    .copy-right{
+        flex-direction: column-reverse;
+    }
+    .copy-right .footer-social{
+        margin: 10px 0;
+    }
+    footer{
+        padding: 20px 5px;
     }
 }
