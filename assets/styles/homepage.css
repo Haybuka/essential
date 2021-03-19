@@ -568,3 +568,29 @@ overflow-x: hidden;
     }
     
 }
+
+@media screen and (max-width:600px){
+    .customer-review-heading h3{
+        font-size: 20px;
+    }
+    .customer-review{
+        padding: 10px 0;
+    }
+    .customer-review .shade{
+        font-size: 12px;
+    }
+    .testimony-det{
+        width: auto;
+    }
+    .card-img{
+        display: none !important;
+        overflow: hidden;
+    }
+    .slide-review article{
+        padding: 30px 10px;
+        width: auto;
+       margin: 0 15px;
+       background-color: #fff;
+       border-radius: 10px;
+    }
+}
