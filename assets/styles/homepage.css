@@ -349,9 +349,10 @@ p.shade{
 .customer-review{
     padding: 40px;
     background-color: #EE6624;
-    margin: 40px 0;
+    margin: 40px 0 0 0;
     text-align: center;
 }
+
 .customer-review-heading {
     margin: 20px;
 }
