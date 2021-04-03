@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="shortcut icon" href="/assets/images/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="/assets/styles/login.css">
-    <title>Form Validator</title>
+    <title>Login Page</title>
 </head>
 
 <body>
+   <div class="container">
     <header>
         <nav>
             <a href="#" class="logo-sec">
@@ -25,13 +27,24 @@
         </nav>
     </header>
     <main>
-        <section>
-             
+        <section class="grid-section">
+             <aside class="grid-one">
+                 <img src="/assets/images/creekers tin.png" alt=" ">
+               
+             </aside>
+             <aside class="grid-two">
+                 <img src="/assets/images/palmoil.png" alt=" ">
+             </aside>
+             <aside class="grid-three">
+                 <img src="/assets/images/beans-flour.png" alt="">
+             </aside>
         </section>
-        <section>
+        <section class="signup-div">
             <form class="form" id="form">
-                <h2>Welcome Back</h2>
+                <article>
+                    <h2>Welcome back !</h2>
                 <p>Please login to Your Account</p>
+                </article>
                 <div class="form-control">
                     <label for="email"> Input Your Email</label>
                     <input type="test" name="email" id="email" placeholder="Enter email">
@@ -42,13 +55,18 @@
                     <input type="password" name="password" id="password" placeholder="Enter Password">
                     <small>Error Mesage</small>
                 </div>
-                <button type="submit">Submit</button>
-            </form>
+                <div>
+                <button type="submit" class="sign-up">Login</button>
+                <button type="submit" class="sign-up sign-mobile">Sign Up</button>
+
+                </div>
+            </form> 
         </section>
     </main>
-    
-
-<script src="/assets/script/login.js"></script>
+   </div> 
+<!-- <script src="/assets/script/login.js"></script> -->
 </body>
 
 </html>
+
+<!-- -->
