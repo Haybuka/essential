@@ -190,6 +190,12 @@ article{
 }
 
 @media screen and (max-width:710px){
+div.button{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    }
+    
    .form{
        padding-top: 10px;
    }
@@ -203,6 +209,7 @@ article{
     
 .form button{
     width: 100%;
+    margin: 0 10px;
 }
 nav .sign-up{
     display: none;
