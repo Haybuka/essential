@@ -190,7 +190,9 @@ article{
 }
 
 @media screen and (max-width:710px){
-   
+   .form{
+       padding-top: 10px;
+   }
     .logo-sec h1{
         margin-left: 5px;
         font-size: 20px;
