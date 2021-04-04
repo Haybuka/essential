@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+nav a{
+    color: #000;
+    text-decoration: none;
+}
+.logo{
+    width: 85px;
+    height: 85px;
+}
+.logo-sec{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.logo-sec p,.logo-sec h1{
+    margin: 0;
+}
+.logo-sec h1{
+    margin-left: 10px;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.user-profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.user-profile div:nth-child(2){
+    margin-left: 10px;
+}
+nav ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav li{
+    /* display: inline-block; */
+    list-style: none;
+    margin: 0 10px;
+}
+
+.not-bell{
+    width: 40px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.342);
+    position: relative;
+}
+.icon-div{
+    width: 40px;
+    height: 40px;
+}
+.not-bell::after{
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    width: 20%;
+    height: 20%;
+    background-color: red;
+    content: '';
+    border-radius: 15px;
+}
+nav ul img{
+  width: 100%;
+  height: 100%;
+}
+
+nav form input{
+    width: 100%;
+    min-width: 400px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #0000004f;
+   outline: none;
+   margin-left: 20px;
+   border: none;
+}
+main h2{
+    font-weight: 600;
+}
+
+.products-section div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.products-section h2,.cart-section h2{
+    padding: 10px 0;
+}
+.product-category{
+    padding: 0;
+}
+.product-category li{
+    display: inline-block;
+}
+.product-category li.active{
+    border-bottom: 2px solid #ee6624;
+}
+.product-category li:nth-child(2){
+    margin-left: 20px;
+}
+.product-sort p{
+    display: inline-block;
+    margin: 0;
+}
+.cart-sort{
+    text-align: right;
+    margin-top: 10px;
+}
+.cart-sort p{
+    display: inline-block;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+main .products-section{
+    grid-column: 1/8;
+    grid-row: 1/2;
+    border: 1px solid #E5E5E5;
+    padding: 0 50px;
+    border-right: none;
+}
+main .cart-section{
+    border: 1px solid #E5E5E5;
+    grid-column: 8/13;
+    grid-row: 1/2;
+    padding: 0 50px;
+}
+main .products-detail{
+    grid-column: 1/8;
+  grid-row: 2/3;
+}
+main .cart-detail{
+    grid-column: 8/13;
+    grid-row: 2/3;
+    border: 1px solid #E5E5E5;
+    border-top: none;
+}
+
+.order-div{
+    width: 50px;
+    height: 50px;
+}
+.order-div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.order-main p{
+    line-height: 20px;
+    color: #999999;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.order{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 25px;
+    box-shadow: 1px 1px 5px #0000004f;
+}
+.order-detail div{
+ display: inline-block;
+}
+.order-action{
+    background-color: #E0245E;
+    height: 35px;
+    width: 35px;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+.order-action img{
+    width: 100%;
+    height: 100%;
+}
+.order-items{
+    border: 1px solid #E5E5E5;
+    border-bottom: none;
+}
+.cart-detail aside p{
+    text-align: center;
+    margin: 30px 0;
+}
+.total-amt{
+    color: #ee6624;
+    font-weight: 700;
+}
+.msg-icon{
+    width: 35px;
+    height: 35px;
+    padding: 10px 5px;
+    border-radius: 25px;
+    background-color: #F7A822;
+    display: inline-block;
+    transform:translate(25px,-10px)
+}
+.msg-icon img{
+    width: 80%;
+    height: 100%;
+}
+.check-out{
+    background-color:  #ee6624;
+    color: #fff;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+#order-item .order{
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 25px 50px;
+}
+#order-item .order-action{
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.459);
+    display: inline-block;
+    transform: translateY(10px);
+}
+#order-item .order-action+a{
+    display: inline-block;
+    margin-left: 10px;
+}
+.products-detail aside{
+    margin: 10px 0;
+}

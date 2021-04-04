@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>checkout</title>
     <link rel="shortcut icon" href="/assets/images/logo.svg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/check.css">
 </head>
 <body>
@@ -38,7 +39,7 @@
         <section class="order-section">
             <h3 class="lead-text">Your Order</h3>
             <ul class="order-items">
-                <li class="order">
+                <li class="order" data-aos="fade-up">
                     <div class="order-detail">
                         <div class="order-div">
                             <img src="/assets/images/food-icon/pexels-pixabay-315755wbb 1.png" alt="">
@@ -54,7 +55,7 @@
                         <span class="add-order ">+</span>
                     </div>
                 </li>
-                <li class="order">
+                <li class="order" data-aos="fade-up">
                     <div class="order-detail">
                         <div class="order-div">
                             <img src="/assets/images/food-icon/pexels-pixabay-315755wbb 1.png" alt="">
@@ -70,7 +71,7 @@
                         <span class="add-order ">+</span>
                     </div>
                 </li>
-                <li class="order">
+                <li class="order" data-aos="fade-up">
                     <div class="order-detail">
                         <div class="order-div">
                             <img src="/assets/images/food-icon/pexels-pixabay-315755wbb 1.png" alt="">
@@ -87,7 +88,7 @@
                     </div>
                 </li>
             </ul>
-            <ul class="order-summary">
+            <ul class="order-summary" data-aos="fade-left">
                 <li>
                     <p>Subtotal</p>
                     <p class="sub-total summary-value">$62.00</p>
@@ -101,29 +102,29 @@
                     <p class="total summary-value">$62.00</p>
                 </li>
             </ul>
-            <button class="btn">Modify Order</button>
+            <button class="btn" >Modify Order</button>
         </section>
         <section class="payment-section">
             <h3 class="lead-text">Payment Method</h3>
             <form action="">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="card-details">
+                <label for="email" data-aos="fade-right">Email</label>
+                <input type="email" name="email" id="email" data-aos="fade-right">
+                <label for="card-details" data-aos="fade-left">
                     Card Details
                 </label>
-                <div id="card-details">
+                <div id="card-details" data-aos="fade-left">
                     <input type="text" name="card-number" id="card-number" placeholder="card number">
                     <aside>
                        <input type="text" name="card-year" id="card-year" placeholder="DD/MM">
                        <input type="text" name="card-cvv" id="card-cvv" placeholder="CVV">
                     </aside>
                 </div>
-                <label for="name">Name on card</label>
-                <input type="text" name="name" id="name">
-                <label for="card-details">
+                <label for="name" data-aos="fade-right">Name on card</label>
+                <input type="text" name="name" id="name" data-aos="fade-right">
+                <label for="card-details" data-aos="fade-left">
                     Country or Region
                 </label>
-                <div id="location">
+                <div id="location" data-aos="fade-right">
                     <input type="text" name="country" id="country" placeholder="Country">
                     <aside>
                        <input type="text" name="zip-code" id="zip-code" placeholder="Zip Code">
@@ -134,5 +135,9 @@
         </section>
     </main>
    </div>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
