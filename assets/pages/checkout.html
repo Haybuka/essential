@@ -35,7 +35,103 @@
         </nav>
     </header>
     <main>
-        <section></section>
+        <section class="order-section">
+            <h3 class="lead-text">Your Order</h3>
+            <ul class="order-items">
+                <li class="order">
+                    <div class="order-detail">
+                        <div class="order-div">
+                            <img src="/assets/images/food-icon/pexels-pixabay-315755wbb 1.png" alt="">
+                        </div>
+                        <div class="order-main">
+                            <h4 class="order-head">Cassava Flour</h4>
+                            <p>$9</p>
+                        </div>
+                    </div>
+                    <div class="order-action">
+                        <span class="reduce-order ">-</span>
+                         <p class="order-qty">1</p> 
+                        <span class="add-order ">+</span>
+                    </div>
+                </li>
+                <li class="order">
+                    <div class="order-detail">
+                        <div class="order-div">
+                            <img src="/assets/images/food-icon/pexels-pixabay-315755wbb 1.png" alt="">
+                        </div>
+                        <div class="order-main">
+                            <h4 class="order-head">Cassava Flour</h4>
+                            <p>$9</p>
+                        </div>
+                    </div>
+                    <div class="order-action">
+                        <span class="reduce-order ">-</span>
+                         <p class="order-qty">1</p> 
+                        <span class="add-order ">+</span>
+                    </div>
+                </li>
+                <li class="order">
+                    <div class="order-detail">
+                        <div class="order-div">
+                            <img src="/assets/images/food-icon/pexels-pixabay-315755wbb 1.png" alt="">
+                        </div>
+                        <div class="order-main">
+                            <h4 class="order-head">Cassava Flour</h4>
+                            <p>$9</p>
+                        </div>
+                    </div>
+                    <div class="order-action">
+                        <span class="reduce-order ">-</span>
+                         <p class="order-qty">1</p> 
+                        <span class="add-order ">+</span>
+                    </div>
+                </li>
+            </ul>
+            <ul class="order-summary">
+                <li>
+                    <p>Subtotal</p>
+                    <p class="sub-total summary-value">$62.00</p>
+                </li>
+                <li>
+                    <p>Delivery Fee</p>
+                    <p class="sub-total summary-value">$62.00</p>
+                </li>
+                <li>
+                    <p>Total</p>
+                    <p class="total summary-value">$62.00</p>
+                </li>
+            </ul>
+            <button class="btn">Modify Order</button>
+        </section>
+        <section class="payment-section">
+            <h3 class="lead-text">Payment Method</h3>
+            <form action="">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="card-details">
+                    Card Details
+                </label>
+                <div id="card-details">
+                    <input type="text" name="card-number" id="card-number" placeholder="card number">
+                    <aside>
+                       <input type="text" name="card-year" id="card-year" placeholder="DD/MM">
+                       <input type="text" name="card-cvv" id="card-cvv" placeholder="CVV">
+                    </aside>
+                </div>
+                <label for="name">Name on card</label>
+                <input type="text" name="name" id="name">
+                <label for="card-details">
+                    Country or Region
+                </label>
+                <div id="location">
+                    <input type="text" name="country" id="country" placeholder="Country">
+                    <aside>
+                       <input type="text" name="zip-code" id="zip-code" placeholder="Zip Code">
+                    </aside>
+                </div>
+                <button class="btn"> pay $65.4</button>
+            </form>
+        </section>
     </main>
    </div>
 </body>
