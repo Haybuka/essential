@@ -338,6 +338,9 @@ main .cart-detail{
     }
 }
 @media screen and (max-width:800px){
+    .layout{
+        display: none;
+    }
     .cart-product{
         display: block;
         cursor: pointer;
@@ -385,9 +388,7 @@ main .cart-detail{
     #order-item .order{
         margin: 10px;
     }
-    body.layout{
-        display: none;
-    }
+  
     main .cart-detail{
         width: 100%;
         top: 110px;
