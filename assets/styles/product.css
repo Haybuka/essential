@@ -346,6 +346,9 @@ main .cart-detail{
         grid-column: 1/13;
         /* border: none; */
     }
+    nav form{
+        display: none;
+    }
     .order-items{
         border: none;
     }
