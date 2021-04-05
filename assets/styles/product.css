@@ -377,15 +377,21 @@ main .cart-detail{
     header nav{
         padding: 0 10px;
     }
+    .order-head{
+        font-size: 14px;
+    }
 }
 @media screen and (max-width:520px){
     #order-item .order{
         margin: 10px;
     }
     main .cart-detail{
-        width: 85%;
+        width: 90%;
+        top: 175px;
     }
-   
+   main h2{
+       font-size: 18px;
+   }
     main .products-section {
         grid-column: 1/13;
         border: none;
