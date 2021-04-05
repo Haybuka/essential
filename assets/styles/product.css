@@ -252,7 +252,7 @@ main .cart-detail{
  background-color: #fff;
  position: absolute;
  bottom: 50px;
- right: 0;
+ right: 20px;
  border-radius: 15px;
  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.356);
  overflow: hidden;
@@ -386,8 +386,7 @@ main .cart-detail{
         margin: 10px;
     }
     body.layout{
-        overflow: hidden;
-        height: 100vh;
+        display: none;
     }
     main .cart-detail{
         width: 100%;
