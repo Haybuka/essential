@@ -222,11 +222,21 @@ main .cart-detail{
     border-radius: 25px;
     background-color: #F7A822;
     display: inline-block;
-    transform:translate(25px,-10px)
+    transform:translate(25px,-10px);
+    cursor: pointer;
 }
 .msg-icon img{
     width: 80%;
     height: 100%;
+}
+.cart-qty{
+    display: inline-block;
+    font-size: 10px;
+    background-color: #ee6624;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transform: translateY(-10px);
 }
 .check-out{
     background-color:  #ee6624;
