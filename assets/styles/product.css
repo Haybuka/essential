@@ -387,7 +387,7 @@ main .cart-detail{
     }
     main .cart-detail{
         width: 90%;
-        top: 175px;
+        top: 110px;
     }
    main h2{
        font-size: 18px;
@@ -399,5 +399,24 @@ main .cart-detail{
     }
     main .products-detail{
         grid-column: 1/13;
+    }
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+    .logo-sec h1{
+        font-size: 15px;
+        transform: translateX(-3px);
+    }
+    .not-bell,.icon-div{
+        width: 25px;
+        height: 25px;
+    }
+    .not-bell{
+        padding: 3px 7px;
+    }
+    .user-profile p{
+        font-size: 12px;
+        line-height: 16px;
     }
 }
