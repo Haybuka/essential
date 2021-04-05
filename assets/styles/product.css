@@ -379,12 +379,17 @@ main .cart-detail{
     }
 }
 @media screen and (max-width:520px){
+    #order-item .order{
+        margin: 10px;
+    }
     main .cart-detail{
         width: 85%;
     }
-    .products-section {
+   
+    main .products-section {
         grid-column: 1/13;
         border: none;
+        padding: 0 10px;
     }
     main .products-detail{
         grid-column: 1/13;
