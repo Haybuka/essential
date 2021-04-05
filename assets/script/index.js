@@ -99,3 +99,4 @@ $('.slide-review').slick({
 });
 
 AOS.init();
+console.clear()

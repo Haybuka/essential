@@ -47,3 +47,4 @@ form.addEventListener('click',function (e) {
     // to automate the task at once
     checkRequired([email,password])
 })
+console.clear()
