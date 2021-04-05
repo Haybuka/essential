@@ -195,14 +195,37 @@
             </ul>
             <aside>
                 <p>Total : <span class="total-amt">$200</span></p>
-                <p><a href="/assets/pages/checkout.html" class="check-out">Checkout</a> <span class="msg-icon"><img src="/assets/images/food-icon/msg-icon.svg" alt=""></span></p>
+                <p class="product-action">
+                     <a href="/assets/pages/checkout.html" class="check-out">Checkout</a> 
+                     <span class="msg-icon"><img src="/assets/images/food-icon/msg-icon.svg" alt=""></span>
+                     <div class="customer-care">
+                          <h4 class="customer-lead">Welcome to Customer Support</h4>
+                           <div>
+                            <small class="cc-reply">Hello there</small>
+                            <small class="user-reply">Hello there</small>
+                           </div>
+                          <form action="">
+                              <input type="text" name="customer" id="customer" placeholder="type here">
+                          </form>
+                     </div>
+                </p>
             </aside>
         </section>
     </main>
     <script>
         let msgIcon = document.querySelector('.msg-icon');
+        let customareCare = document.querySelector('.customer-care')
         msgIcon.addEventListener('click',()=>{
-           
+           customareCare.classList.toggle('active');
+          let form = document.querySelector('.customer-care form');
+           form.addEventListener('submit',(e)=>{
+               e.preventDefault();
+               let formEntry = form[0].value;
+               let small = document.createElement('small');
+               small.innerText = formEntry;
+               small.setAttribute('class','user-reply');
+               customareCare.querySelector('div').append(small);
+           })
         })
     </script>
 </body>
