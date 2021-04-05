@@ -385,8 +385,12 @@ main .cart-detail{
     #order-item .order{
         margin: 10px;
     }
+    body.layout{
+        overflow: hidden;
+        height: 100vh;
+    }
     main .cart-detail{
-        width: 90%;
+        width: 100%;
         top: 110px;
     }
    main h2{
