@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="shortcut icon" href="/assets/images/logo.svg" type="image/x-icon">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/product.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
                 <p class="logo">
                     <img src="/assets/images/logo.svg" alt="">
                 </p>
-                <form action="">
+                <form action="" id="nav-search">
                     <input type="search" name="search" id="search" placeholder="search">
                 </form>
             </a>
@@ -37,8 +37,9 @@
         </nav>
     </header>
     <main>
-        <section class="products-section">
+        <section class="products-section" data-aos="fade-left">
            <h2>Products</h2>
+           <h2 class="cart-product">Cart</h2>
            <div>
             <ul class="product-category">
                 <li>Foods</li>
@@ -50,7 +51,7 @@
             </aside>
            </div>
         </section>
-        <section class="cart-section">
+        <section class="cart-section" data-aos="fade-right">
           <h2>
               <span>Cart</span>
               <span class="cart-qty">2</span>
@@ -70,7 +71,7 @@
                             <img src="/assets/images/food-icon/pexels-pixabay-315755wbb 1.png" alt="">
                         </div>
                         <div class="order-main">
-                            <h4 class="order-head">Cassava Flour</h4>
+                            <h4 class="order-head">Garri Flakes</h4>
                             <p>$9</p>
                         </div>
                     </div>
@@ -87,7 +88,7 @@
                             <img src="/assets/images/food-icon/pexels-pixabay-315755wbb 1.png" alt="">
                         </div>
                         <div class="order-main">
-                            <h4 class="order-head">Cassava Flour</h4>
+                            <h4 class="order-head">Palm Oil</h4>
                             <p>$9</p>
                         </div>
                     </div>
@@ -212,9 +213,16 @@
             </aside>
         </section>
     </main>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         let msgIcon = document.querySelector('.msg-icon');
         let customareCare = document.querySelector('.customer-care')
+        let navSearch = document.getElementById('nav-search');
+        let cartToggle = document.querySelector('.cart-product');
+        let cart = document.querySelector('main .cart-detail')
+       cartToggle.addEventListener('click',()=>{
+          cart.classList.toggle('active')
+       })
         msgIcon.addEventListener('click',()=>{
            customareCare.classList.toggle('active');
           let form = document.querySelector('.customer-care form');
@@ -224,9 +232,11 @@
                let small = document.createElement('small');
                small.innerText = formEntry;
                small.setAttribute('class','user-reply');
+               small.setAttribute("data-aos","fade-left");
                customareCare.querySelector('div').append(small);
            })
         })
+        AOS.init();
     </script>
 </body>
 </html>

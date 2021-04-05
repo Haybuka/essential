@@ -104,7 +104,14 @@ main h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     margin-top: 10px;
+}
+.cart-product{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 30px;
 }
 .products-section h2,.cart-section h2{
     padding: 10px 0;
@@ -114,6 +121,7 @@ main h2{
 }
 .product-category li{
     display: inline-block;
+    cursor: pointer;
 }
 .product-category li.active{
     border-bottom: 2px solid #ee6624;
@@ -123,6 +131,7 @@ main h2{
 }
 .product-sort p{
     display: inline-block;
+    cursor: pointer;
     margin: 0;
 }
 .cart-sort{
@@ -326,5 +335,55 @@ main .cart-detail{
     #order-item .order{
         display: block;
         margin: 20px 35px;
+    }
+}
+@media screen and (max-width:800px){
+    .cart-product{
+        display: block;
+        cursor: pointer;
+    }
+    main .products-section{
+        grid-column: 1/13;
+        /* border: none; */
+    }
+    .order-items{
+        border: none;
+    }
+    main .products-detail{
+        grid-column: 2/12;
+        border: none;
+    }
+    main .cart-detail{
+        position: absolute;
+        width: 60%;
+        top: 179px;
+        right: 0;
+        background-color: #fff;
+        display: none;
+    }
+    main .cart-detail.active{
+        display: block;
+    }
+    .products-section {
+        grid-column: 2/12;
+        border: none;
+    }
+    .cart-section {
+        display: none;
+    }
+    header nav{
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width:520px){
+    main .cart-detail{
+        width: 85%;
+    }
+    .products-section {
+        grid-column: 1/13;
+        border: none;
+    }
+    main .products-detail{
+        grid-column: 1/13;
     }
 }
