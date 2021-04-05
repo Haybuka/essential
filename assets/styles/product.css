@@ -361,7 +361,7 @@ main .cart-detail{
     }
     main .cart-detail{
         position: absolute;
-        width: 60%;
+        width: 100%;
         top: 179px;
         right: 0;
         background-color: #fff;
