@@ -277,14 +277,12 @@ main .cart-detail{
  padding: 5px 15px;
  margin: 10px 0;
  position: relative;
- text-shadow:1px 1.2px 2px rgba(0, 0, 0, 0.356);
 }
 
 .cc-reply{
   text-align: left;
   display: block;
   color: #ee6624;
-  text-shadow:1px 1px 2px rgba(0, 0, 0, 0.356);
   padding: 5px 15px;
   margin: 10px 0;
 }
@@ -335,6 +333,9 @@ main .cart-detail{
     #order-item .order{
         display: block;
         margin: 20px 35px;
+    }
+    .orange-button{
+        color: #ee6624;
     }
 }
 @media screen and (max-width:800px){

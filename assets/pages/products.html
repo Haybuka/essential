@@ -208,6 +208,7 @@
         let cart = document.querySelector('main .cart-detail')
        cartToggle.addEventListener('click',()=>{
           cart.classList.toggle('active');
+          document.querySelector('.cart-product').classList.toggle('orange-button');
           document.querySelector('main .products-detail').classList.toggle('layout');
        })
         msgIcon.addEventListener('click',()=>{
@@ -221,6 +222,7 @@
                small.setAttribute('class','user-reply');
                small.setAttribute("data-aos","fade-left");
                customareCare.querySelector('div').append(small);
+               form[0].value = ''
            })
         })
         console.clear()
