@@ -38,7 +38,7 @@
     </header>
     <main>
         <section class="products-section" data-aos="fade-left">
-           <h2>Products</h2>
+           <h2 class="orange-button prod-head">Products</h2>
            <h2 class="cart-product">Cart</h2>
            <div>
             <ul class="product-category">
@@ -64,14 +64,14 @@
            </div>
         </section>
         <section class="products-detail">
-            <ul class="order-items" id="order-item">
+            <ul class="order-items order-item-two order-item" id="">
                 <li class="order" data-aos="fade-up">
                     <div class="order-detail">
                         <div class="order-div">
                             <img src="/assets/images/food-icon/pexels-pixabay-315755wbb 1.png" alt="">
                         </div>
                         <div class="order-main">
-                            <h4 class="order-head">Garri Flakes</h4>
+                            <h4 class="order-head">Garri Flakes Two</h4>
                             <p>$9</p>
                         </div>
                     </div>
@@ -106,6 +106,76 @@
                         </div>
                         <div class="order-main">
                             <h4 class="order-head">Cassava Flour</h4>
+                            <p>$9</p>
+                        </div>
+                    </div>
+                    <aside>
+                        <div class="order-action">
+                            <img src="/assets/images/food-icon/heart-shape.svg" alt="">
+                        </div>
+                        <a href="#" class="check-out">Add to Cart</a>
+                    </aside>
+                </li>
+                <li class="order" data-aos="fade-up">
+                    <div class="order-detail">
+                        <div class="order-div">
+                            <img src="/assets/images/food-icon/pexels-pixabay-315755wbb 1.png" alt="">
+                        </div>
+                        <div class="order-main">
+                            <h4 class="order-head">Cassava Flour</h4>
+                            <p>$9</p>
+                        </div>
+                    </div>
+                    <aside>
+                        <div class="order-action">
+                            <img src="/assets/images/food-icon/heart-shape.svg" alt="">
+                        </div>
+                        <a href="#" class="check-out">Add to Cart</a>
+                    </aside>
+                </li>
+            </ul>
+            <ul class="order-items order-item-one order-item order-none" id="">
+                <li class="order" data-aos="fade-up">
+                    <div class="order-detail">
+                        <div class="order-div">
+                            <img src="/assets/images/food-icon/pexels-pixabay-315755wbb 1.png" alt="">
+                        </div>
+                        <div class="order-main">
+                            <h4 class="order-head">Garri Flakes One</h4>
+                            <p>$9</p>
+                        </div>
+                    </div>
+                    <aside>
+                        <div class="order-action">
+                            <img src="/assets/images/food-icon/heart-shape.svg" alt="">
+                        </div>
+                        <a href="#" class="check-out">Add to Cart</a>
+                    </aside>
+                </li>
+                <li class="order" data-aos="fade-up">
+                    <div class="order-detail">
+                        <div class="order-div">
+                            <img src="/assets/images/food-icon/pexels-pixabay-315755wbb 1.png" alt="">
+                        </div>
+                        <div class="order-main">
+                            <h4 class="order-head">Pizza thingy</h4>
+                            <p>$9</p>
+                        </div>
+                    </div>
+                    <aside>
+                        <div class="order-action">
+                            <img src="/assets/images/food-icon/heart-shape.svg" alt="">
+                        </div>
+                        <a href="#" class="check-out">Add to Cart</a>
+                    </aside>
+                </li>
+                <li class="order" data-aos="fade-up">
+                    <div class="order-detail">
+                        <div class="order-div">
+                            <img src="/assets/images/food-icon/pexels-pixabay-315755wbb 1.png" alt="">
+                        </div>
+                        <div class="order-main">
+                            <h4 class="order-head">Garri Flour</h4>
                             <p>$9</p>
                         </div>
                     </div>
@@ -199,14 +269,16 @@
             </aside>
         </section>
     </main>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         let msgIcon = document.querySelector('.msg-icon');
         let customareCare = document.querySelector('.customer-care')
         let navSearch = document.getElementById('nav-search');
         let cartToggle = document.querySelector('.cart-product');
         let cart = document.querySelector('main .cart-detail')
+        let prodCategory = document.querySelectorAll('.product-category li')
        cartToggle.addEventListener('click',()=>{
+          document.querySelector('.prod-head').classList.toggle('orange-button')
           cart.classList.toggle('active');
           document.querySelector('.cart-product').classList.toggle('orange-button');
           document.querySelector('main .products-detail').classList.toggle('layout');
@@ -225,8 +297,29 @@
                form[0].value = ''
            })
         })
+        prodCategory.forEach( prod =>{
+            prod.addEventListener('click',function(e){
+                let orderTwo = document.querySelector('.order-item-two')
+                let orderOne = document.querySelector('.order-item-one')
+                if(this.nextElementSibling){
+                    this.classList.toggle('active');
+                     this.nextElementSibling.className = ''
+                     orderTwo.classList.add('order-none');
+                     orderOne.classList.remove('order-none')
+                }else{
+                    this.classList.toggle('active');
+                    this.previousElementSibling.className = ''
+                    orderOne.classList.add('order-none')
+                    orderTwo.classList.remove('order-none')
+                }
+            })
+        })
         console.clear()
-        AOS.init();
+        try {
+            AOS.init();
+        } catch (error) {
+            
+        }
     </script>
 </body>
 </html>

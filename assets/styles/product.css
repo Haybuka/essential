@@ -7,7 +7,9 @@
 html{
     scroll-behavior: smooth;
 }
-
+.order-none{
+  display: none;
+}
 header nav{
     display: flex;
     justify-content: space-between;
@@ -262,7 +264,7 @@ main .cart-detail{
     display: block;
 }
 .customer-care input{
-    width: 95%;
+    width: 94%;
     padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px #0000004f;
@@ -303,18 +305,18 @@ main .cart-detail{
     border-radius: 15px;
 }
 
-#order-item .order{
+.order-item .order{
     display: inline-block;
     padding: 20px 30px;
     margin: 25px 50px;
 }
-#order-item .order-action{
+.order-item .order-action{
     background-color: #fff;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.459);
     display: inline-block;
     transform: translateY(10px);
 }
-#order-item .order-action+a{
+.order-item .order-action+a{
     display: inline-block;
     margin-left: 10px;
 }
@@ -322,7 +324,7 @@ main .cart-detail{
     margin: 10px 0;
 }
 @media screen and (max-width:1320px){
-    #order-item .order{
+    .order-item .order{
         margin: 25px;
     }
 }
@@ -330,7 +332,7 @@ main .cart-detail{
     nav form input{
         min-width: 300px;
     }
-    #order-item .order{
+    .order-item .order{
         display: block;
         margin: 20px 35px;
     }
@@ -386,7 +388,7 @@ main .cart-detail{
     }
 }
 @media screen and (max-width:520px){
-    #order-item .order{
+    .order-item .order{
         margin: 10px;
     }
   
