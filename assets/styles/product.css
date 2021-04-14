@@ -386,6 +386,9 @@ main .cart-detail{
     .order-head{
         font-size: 14px;
     }
+    .customer-care input{
+        width: 92%;
+    }
 }
 @media screen and (max-width:520px){
     .order-item .order{
