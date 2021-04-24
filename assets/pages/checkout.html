@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>checkout</title>
     <link rel="shortcut icon" href="/assets/images/logo.svg" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="/assets/styles/check.css">
 </head>
 <body>
@@ -135,9 +135,36 @@
         </section>
     </main>
    </div>
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 <script>
-    AOS.init();
+    
+    let lis = [...document.querySelectorAll('.order-items li')];
+    lis.forEach(li =>{
+    let order = 0;
+        
+        li.addEventListener('click',function(e){
+            let addItem = this.querySelector('.add-order')
+            let reduceItem = this.querySelector('.reduce-order');
+            let orderDisplay = this.querySelector('.order-qty');
+            orderDisplay.innerHTML = order;
+                addItem.addEventListener('click',(e)=>{
+                    order+=1;
+                    console.log(order);
+                    orderDisplay.innerHTML = order;
+                    e.stopPropagation();
+
+                })
+                reduceItem.addEventListener('click',(e)=>{
+                    order-=1;
+                    console.log(order);
+                    orderDisplay.innerHTML = order;
+                    e.stopPropagation();
+
+                })
+        })
+    })
+    // AOS.init();
+
 </script>
 </body>
 </html>
