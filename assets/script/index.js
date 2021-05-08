@@ -37,7 +37,18 @@ $('.center').slick({
           settings: {
             arrows: false,
             centerMode: true,
-            centerPadding: '20px',
+            centerPadding: '0px',
+            slidesToShow: 2,
+            autoplaySpeed:1500,
+            cssEase:'ease-out'
+          }
+        },
+        {
+          breakpoint: 630,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '0px',
             slidesToShow: 1,
             autoplaySpeed:1500,
             cssEase:'ease-out'
