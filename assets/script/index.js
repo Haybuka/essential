@@ -9,7 +9,7 @@ harmburger.addEventListener('click',()=>{
 $('.center').slick({
       centerMode: true,
       centerPadding: '60px',
-      slidesToShow: 4,
+      slidesToShow: 3,
       arrows:false,
       autoplay:true,
       responsive: [
