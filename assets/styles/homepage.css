@@ -10,6 +10,9 @@ html{
 .container{
     padding: 5px 40px;
 }
+.slick-list{
+    margin: 0 auto;
+}
 .img-oval{
     position: absolute;
     right: 20%;

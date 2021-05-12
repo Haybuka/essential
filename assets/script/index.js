@@ -1,6 +1,7 @@
 
 let harmburger = document.querySelector('.harmburger');
 let navAlt = document.querySelector('.nav-alt');
+let asides = [...document.querySelectorAll('.slide-aside')]
 
 harmburger.addEventListener('click',()=>{
   navAlt.classList.toggle('slide-left');
@@ -57,57 +58,70 @@ $('.center').slick({
       ]
     });
 
-    
-$('.slide-review').slick({
-  centerMode: false,
-  centerPadding: '60px',
-  slidesToShow: 2,
-  arrows:true,
-  autoplay:false,
-  responsive: [
-  {
-      breakpoint: 1240,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '20px',
-        slidesToShow: 2
-      }
-    },
+if (asides.length < 2) {
+   
+   $('.slide-review').slick({
+     centerMode: true,
+     centerPadding: '60px',
+     slidesToShow: 1,
+     arrows:true,
+     autoplay:false,
+     });
+}else{
+  $('.slide-review').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 2,
+    arrows:true,
+    autoplay:false,
+    responsive: [
     {
-      breakpoint: 1080,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '10px',
-        slidesToShow: 2,
-        autoplaySpeed:2000
+        breakpoint: 1240,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '20px',
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 1080,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '10px',
+          slidesToShow: 2,
+          autoplaySpeed:2000
+        }
+      },
+      {
+        breakpoint: 1060,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1,
+          autoplaySpeed:1500,
+          cssEase:'ease-out'
+        }
+      },
+      {
+        breakpoint: 730,
+        settings: {
+          arrows: true,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1,
+          autoplaySpeed:1500,
+          cssEase:'ease-out'
+        }
       }
-    },
-    {
-      breakpoint: 1060,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 1,
-        autoplaySpeed:1500,
-        cssEase:'ease-out'
-      }
-    },
-    {
-      breakpoint: 730,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 1,
-        autoplaySpeed:1500,
-        cssEase:'ease-out'
-      }
-    }
-  ]
-});
+    ]
+  });
+}
+
+
+
 
 AOS.init();
 console.clear()
