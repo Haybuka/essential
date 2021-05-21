@@ -153,6 +153,16 @@ main .products-section{
     border: 1px solid #E5E5E5;
     padding: 0 50px;
     border-right: none;
+    position: relative;
+}
+.added-msg{
+    position: absolute !important;
+    right: 10px;
+    top: 15px;
+    background-color:rgba(23, 191, 99, 0.28);
+    color:#17BF63;
+    border-radius: 10px;
+    padding: 10px 20px;
 }
 main .cart-section{
     border: 1px solid #E5E5E5;

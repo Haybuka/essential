@@ -38,6 +38,9 @@
     </header>
     <main>
         <section class="products-section" data-aos="fade-left">
+            <!-- <div class="added-message">
+
+            </div> -->
            <h2 class="orange-button prod-head">Products</h2>
            <h2 class="cart-product">Cart</h2>
            <div>
@@ -276,6 +279,8 @@
         let navSearch = document.getElementById('nav-search');
         let cartToggle = document.querySelector('.cart-product');
         let cart = document.querySelector('main .cart-detail')
+        let productSection = document.querySelector('main .products-section')
+        let allAddCarts = [...document.querySelectorAll('.order-item a.check-out')];
         let prodCategory = document.querySelectorAll('.product-category li')
        cartToggle.addEventListener('click',()=>{
           document.querySelector('.prod-head').classList.toggle('orange-button')
@@ -320,6 +325,19 @@
         } catch (error) {
             
         }
+        allAddCarts.forEach(cartItem =>{
+            cartItem.addEventListener('click',function() {
+                // alert('item added');
+                let productName = this.parentElement.parentElement.querySelector('.order-head').innerHTML
+                let addDiv = document.createElement('p');
+                addDiv.setAttribute('class','added-msg');
+                addDiv.innerHTML = `Added ${productName} to cart`;
+                productSection.append(addDiv);
+                setTimeout(() => {
+                    productSection.removeChild(productSection.querySelector('.added-msg'));
+                }, 3000);
+            })
+        })
     </script>
 </body>
 </html>
