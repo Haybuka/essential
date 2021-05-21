@@ -144,9 +144,6 @@ label{
     font-size: 14px;
 }
 
-.reduce-order,.add-order,.order-qty{
-    margin: 0 10px;
-}
 .order-items{
     margin-top: 15px;
 }
@@ -155,6 +152,23 @@ label{
     justify-content: space-between;
     align-items: center;
 }
+
+.order-action input {
+    -webkit-appearance: none;
+    margin: 0;
+    background-color: rgba(153, 153, 153, 0.4);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px 0;
+    border: none;
+    width: 50px;
+    border-radius: 15px;
+  }
+  
+  /* Firefox */
+  .order-action  input[type=number] {
+    -moz-appearance: textfield;
+  }
 .order{
     list-style: none;
     display: flex;
