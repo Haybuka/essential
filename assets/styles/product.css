@@ -156,13 +156,30 @@ main .products-section{
     position: relative;
 }
 .added-msg{
-    position: absolute !important;
+    position: fixed !important;
     right: 10px;
     top: 15px;
     background-color:rgba(23, 191, 99, 0.28);
     color:#17BF63;
     border-radius: 10px;
+    z-index: 2;
     padding: 10px 20px;
+}
+.order-cart-qty input {
+  -webkit-appearance: none;
+  margin: 0;
+  background-color: rgba(153, 153, 153, 0.4);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 5px 0;
+  border: none;
+  width: 100px;
+  border-radius: 15px;
+}
+
+/* Firefox */
+.order-cart-qty  input[type=number] {
+  -moz-appearance: textfield;
 }
 main .cart-section{
     border: 1px solid #E5E5E5;

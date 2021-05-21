@@ -220,11 +220,14 @@
                             <p>$9</p>
                         </div>
                     </div>
+                    <div class="order-cart-qty">
+                        <input type="number" name="" id="">
+                    </div>
                     <div class="order-action">
                         <img src="/assets/images/food-icon/delete-icon.svg" alt="">
                     </div>
                 </li>
-                <li class="order" data-aos="fade-up">
+                <!-- <li class="order" data-aos="fade-up">
                     <div class="order-detail">
                         <div class="order-div">
                             <img src="/assets/images/food-icon/pexels-pixabay-315755wbb 1.png" alt="">
@@ -251,7 +254,7 @@
                     <div class="order-action">
                         <img src="/assets/images/food-icon/delete-icon.svg" alt="">
                     </div>
-                </li>
+                </li> -->
             </ul>
             <aside>
                 <p>Total : <span class="total-amt">$200</span></p>
@@ -327,7 +330,6 @@
         }
         allAddCarts.forEach(cartItem =>{
             cartItem.addEventListener('click',function() {
-                // alert('item added');
                 let productName = this.parentElement.parentElement.querySelector('.order-head').innerHTML
                 let addDiv = document.createElement('p');
                 addDiv.setAttribute('class','added-msg');
